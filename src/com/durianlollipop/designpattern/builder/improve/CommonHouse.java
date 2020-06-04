@@ -1,5 +1,6 @@
 package com.durianlollipop.designpattern.builder.improve;
 
+/** 具体建造者*/
 class CommonHouse extends HouseBuilder{
     @Override
     void buildBasic() {
