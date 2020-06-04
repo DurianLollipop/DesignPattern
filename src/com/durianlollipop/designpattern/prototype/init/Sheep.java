@@ -1,4 +1,4 @@
-package com.durianlollipop.designpattern.prototype;
+package com.durianlollipop.designpattern.prototype.init;
 
 public class Sheep {
     private String name;

@@ -2,6 +2,12 @@ package com.durianlollipop.designpattern.factory.simplefactory.pizzastore.order;
 
 public class PizzaStore {
     public static void main(String[] args) {
-        new OrderPizza();
+
+        //简单工厂模式
+//        new OrderPizza(new SimpleFactory());
+
+        //简单工厂模式-静态方法
+        new OrderPizza2();
+        System.out.println("~~退出了程序~~");
     }
 }

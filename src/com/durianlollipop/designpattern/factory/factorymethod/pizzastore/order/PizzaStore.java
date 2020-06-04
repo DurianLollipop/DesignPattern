@@ -9,7 +9,7 @@ public class PizzaStore {
         String local = new Scanner(System.in).nextLine();
 
         if(local.equals("LD")){
-            //伦敦口味piza
+            //伦敦口味pizza
             new LDOrderPizza();
         }else if (local.equals("BJ")){
             //北京口味pizza

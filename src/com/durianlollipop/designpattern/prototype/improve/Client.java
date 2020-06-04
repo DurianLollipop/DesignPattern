@@ -1,6 +1,8 @@
 package com.durianlollipop.designpattern.prototype.improve;
 
-//传统方法
+/**
+ * 浅拷贝
+ */
 public class Client {
     public static void main(String[] args) {
         //羊原型

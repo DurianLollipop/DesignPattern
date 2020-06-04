@@ -3,12 +3,17 @@ package com.durianlollipop.designpattern.prototype.deepclone;
 import java.io.*;
 
 public class DeepProtoType implements Serializable,Cloneable {
+    /** String 属性*/
+    public String name;
+    /** 引用类型*/
+    public DeepCloneableTarget deepCloneableTarget;
 
-    public String name; //String 属性
-    public DeepCloneableTarget deepCloneableTarget;// 引用类型
 
-
-    //深拷贝 - 方式一使用clone方法
+    /**
+     * 深拷贝 - 方式一：使用clone方法实现深拷贝
+     * @return
+     * @throws CloneNotSupportedException
+     */
     @Override
     protected Object clone() throws CloneNotSupportedException {
         Object deep = null;
@@ -20,6 +25,10 @@ public class DeepProtoType implements Serializable,Cloneable {
         return deepProtoType;
     }
 
+    /**
+     * 深拷贝 - 方式二：通过对象序列化实现深拷贝(推荐)
+     * @return
+     */
     public Object deppClone(){
         //创建流对象
         ByteArrayOutputStream bos = null;

@@ -1,7 +1,5 @@
 package com.durianlollipop.princple.liskov.improve;
 
-import org.omg.CORBA.BAD_CONTEXT;
-
 public class Liskov {
     public static void main(String[] args) {
         A a = new A();

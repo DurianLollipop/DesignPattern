@@ -1,12 +1,16 @@
-package com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz;
+package com.durianlollipop.designpattern.factory.init.pizzastore.pizz;
 
-//将Pizza类做成抽象类
+/**
+ * 将Pizza类做成抽象类
+ */
 public abstract class Pizza {
 
-    //名字
+    /** 名字*/
     protected String name;
 
-    //准备原材料，不同的披萨不一样，因此做成抽象方法
+    /**
+     * 准备原材料，不同的披萨不一样，因此做成抽象方法
+     */
     public abstract void prepare();
 
     public void bake(){

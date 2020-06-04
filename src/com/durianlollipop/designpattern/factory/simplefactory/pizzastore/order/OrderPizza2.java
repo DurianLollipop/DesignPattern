@@ -1,6 +1,6 @@
-package com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.order;
+package com.durianlollipop.designpattern.factory.simplefactory.pizzastore.order;
 
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz.Pizza;
+import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.Pizza;
 
 import java.util.Scanner;
 

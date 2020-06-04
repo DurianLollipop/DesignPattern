@@ -1,6 +1,8 @@
-package com.durianlollipop.designpattern.prototype;
+package com.durianlollipop.designpattern.prototype.init;
 
-//传统方法
+/**
+ * 传统方法
+ */
 public class Client {
     public static void main(String[] args) {
         //羊原型

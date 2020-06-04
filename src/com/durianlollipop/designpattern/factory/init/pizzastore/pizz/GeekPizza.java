@@ -1,4 +1,4 @@
-package com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz;
+package com.durianlollipop.designpattern.factory.init.pizzastore.pizz;
 
 public class GeekPizza extends Pizza {
     @Override

@@ -1,8 +1,8 @@
-package com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.order;
+package com.durianlollipop.designpattern.factory.simplefactory.pizzastore.order;
 
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz.CheesePizza;
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz.PepperPizza;
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore_simplefactory.pizz.Pizza;
+import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.CheesePizza;
+import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.PepperPizza;
+import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.Pizza;
 
 //简单工厂类
 public class SimpleFactory {

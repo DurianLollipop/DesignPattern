@@ -1,36 +1,37 @@
 package com.durianlollipop.designpattern.factory.simplefactory.pizzastore.order;
 
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.CheesePizza;
-import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.PepperPizza;
 import com.durianlollipop.designpattern.factory.simplefactory.pizzastore.pizz.Pizza;
 
 import java.util.Scanner;
 
 public class OrderPizza {
 
-    public OrderPizza(){
-        Pizza pizza = null;
-        //订购Pizza的类型
-        String orderType;
-        do{
-            System.out.println("请输入Pizza的种类:");
+    SimpleFactory simpleFactory;
+    Pizza pizza = null;
+
+    public OrderPizza(SimpleFactory simpleFactory){
+        setSimpleFactory(simpleFactory);
+    }
+
+    public void setSimpleFactory(SimpleFactory simpleFactory) {
+        String orderType = "";
+        this.simpleFactory = simpleFactory;
+
+        do {
+            System.out.println("请输入要订购的Pizza种类：");
             orderType = new Scanner(System.in).nextLine();
-            if(orderType.equals("greek")){
-                pizza = new CheesePizza();
-                pizza.setName(" 希腊披萨 ");
-            }else if (orderType.equals("chesse")){
-                pizza = new CheesePizza();
-                pizza.setName(" 奶酪披萨 ");
-            }else if (orderType.equals("pepper")){
-                pizza = new PepperPizza();
-                pizza.setName(" 胡椒披萨 ");
+            pizza = this.simpleFactory.createPizza(orderType);
+
+            //输出pizza
+            if(pizza != null){
+                pizza.prepare();
+                pizza.bake();
+                pizza.cut();
+                pizza.bake();
             }else {
+                System.out.println("订购披萨失败");
                 break;
             }
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
         }while (true);
 
     }

@@ -1,5 +1,8 @@
 package com.durianlollipop.designpattern.prototype.deepclone;
 
+/**
+ * 深拷贝
+ */
 public class Client {
 
     public static void main(String[] args) throws CloneNotSupportedException {
